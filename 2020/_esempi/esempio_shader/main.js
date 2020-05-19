@@ -2,11 +2,7 @@ import * as GLU from './glsl_utils.js'
 import * as shader_sources from './shader.js'
 
 // -- Canvas ------------------------------------
-const canvas = document.createElement("canvas")
-canvas.style.width = '100vw'
-canvas.style.height = '100vh'
-document.body.appendChild(canvas)
-
+const canvas = document.querySelector("canvas")
 const gl = canvas.getContext('webgl')
 if(!gl){
     console.error("Unable to initialize WebGL")
