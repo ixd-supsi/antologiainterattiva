@@ -36,7 +36,7 @@ function loop(t){
         const riga = testo[j]
         for (let i=0; i<riga.length; i++){
             const char = riga[i]
-            const oy = Math.sin(t * 0.005 + i + j) * 4
+            const oy = Math.sin(t * 0.005 + i*(j+0.2)) * 4
             ctx.fillText(char, x, y + oy)
             ctx.beginPath()
             ctx.moveTo(x, y+10)
@@ -48,6 +48,5 @@ function loop(t){
     ctx.restore()
     requestAnimationFrame(loop)
 }
-
 
 requestAnimationFrame(loop)
