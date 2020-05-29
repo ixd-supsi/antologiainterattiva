@@ -1,0 +1,37 @@
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+body {background-color: black; font-family: 'Roboto Mono', monospace; margin: 90px; font-size: 14px;}
+
+p {color: white;}
+
+
+/*diminuisce lo spazio prima del primo paragrafo, dopo "l'indirizzo"*/
+#spazio {padding-bottom: 140px; padding-top: 30px;}
+
+
+#testo1 {padding-right: 30%;}
+#testo2 {padding-right: 30%;}
+#testo3 {padding-right: 30%;}
+#testo4 {padding-right: 30%;}
+#testo5 {padding-right: 30%;}
+#testo6 {padding-right: 30%;}
+#testo7 {padding-right: 30%;}
+#testo8 {padding-right: 30%;}
+#testo9 {padding-right: 30%;}
+#testo10 {padding-right: 30%;}
+#testo11 {padding-right: 30%;}
+#testo12 {padding-right: 30%;}
+#testo13 {padding-right: 30%;}
+#testo14 {padding-right: 30%;}
+#testo15 {padding-right: 30%;}
+#testo16 {padding-right: 30%;}
+#testo17 {padding-right: 30%;}
+#testo18 {padding-right: 30%;}
+#testo19 {padding-right: 30%;}
+#testo20 {padding-right: 30%;}
+#testo21 {padding-right: 30%;}
+#testo22 {padding-right: 30%;}
