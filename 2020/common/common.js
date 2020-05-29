@@ -15,7 +15,7 @@ function run() {
 
     const mini_audio = document.createElement("div")
     mini_audio.style.cssText = `
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 2em;
         z-index: 1000;
@@ -89,9 +89,11 @@ function run() {
 
     const ctx = canvas.getContext('2d')
     const w = 128
-    const h = 48
+    const h = 32
     canvas.width = w
     canvas.height = h
+    canvas.style.width = w + "px";
+    canvas.style.height = h + "px";
 
     ctx.fillStyle   = 'black'
     ctx.fillRect(0, 0, w, h)
