@@ -48,7 +48,7 @@ void main() {
   {
     vec2 newp=p;
     newp.x+=0.2/float(i)*sin(float(i)*p.y+time/fluid_speed+0.1*float(i))+mouse.y/mouse_factor+mouse_offset;
-    newp.y+=4.6/float(i)*sin(float(i)*p.x+time/fluid_speed+0.1*float(i+50))-mouse.x/mouse_factor+mouse_offset;
+    newp.y+=4.6/float(i)*sin(float(i)*p.x+time/fluid_speed+0.1*float(i+20))-mouse.x/mouse_factor+mouse_offset;
     p=newp;
   }
 
