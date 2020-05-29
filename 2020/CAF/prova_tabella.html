@@ -12,28 +12,46 @@
 			.container {
 				font-family: monospace monospace;
 				display:grid;
-  				grid-template-columns:  6em 20em;
-  				margin-left:5em;
-  				margin-top:3em;
+  				grid-template-columns:  6em 25em;
+  				padding: 10em;
 			}
+
+			@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+			body {
+				background-color: black;
+				color: white;
+				font-family: 'Roboto Mono', monospace;
+				font-size: 14px;
+			}
+			
+
 			.cell {
 				padding-bottom: 3em;
 			}
+
+			#titolo {
+				padding-bottom: 7em;
+				padding-right: 10em;
+			}
+
 		</style>
 	</head>
 <body>
 
 	<div class="container">
 
+
 		<div class="cell col1"></div>
-		<div class="cell col2">
+		<div class="cell col2" id="titolo">
+			20 febbraio 1962
 			Le lucciole
 			Missione Mercury-Atlas 6
 			Pilota: John Glenn
 			Capsula: Friendship 7
 			Primo viaggio in orbita
 			attorno alla terra
-			$$$$
+			$$$
 		</div>
 
 		<div class="cell col1">CAPCOM</div>
@@ -98,6 +116,17 @@
 		<div class="cell col1">CAPCOM</div>
 		<div class="cell col2">
 			Questa è Friendship Seven. Sono in contatto con qualcuno?
+		</div>
+
+		<div class="cell col1">CAPCOM</div>
+		<div class="cell col2">
+			Questa è Friendship Seven. Sono in contatto con qualcuno?
+		</div>
+
+
+		<div class="cell col1">CAPCOM</div>
+		<div class="cell col2">
+			prova
 		</div>
 
 	</div>
