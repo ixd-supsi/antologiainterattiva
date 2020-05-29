@@ -1,0 +1,86 @@
+body {
+  background: black;
+  font-family: 'Lora', serif;
+  margin: 0;
+
+}
+
+canvas {
+    position: absolute;
+      display:block;
+      width:100vw;
+      height:100vh;
+      left:0;
+      top:0;
+    }
+
+    .selezionato {
+      color: white;
+
+    }
+
+    span {
+      transition: color 200ms !important;
+
+    }
+
+span span{
+  transition: none;
+}
+
+
+section{
+  margin-top: 90px;
+  margin-left: 120px;
+  width: 900px;
+}
+
+
+/*.sfondo{
+  position: absolute;
+}*/
+
+
+
+.titolo{
+    font-size: 40px;
+    height: 80px;
+
+}
+
+
+.data{
+    font-size: 13px;
+    padding-top: 20px;
+    padding-left: 215px;
+    padding-top: 30px;
+
+}
+
+
+/*section{
+  position: absolute;
+}*/
+
+.vecchia{
+  color: grey;
+  width: 360px;
+  position: absolute;
+  font-size: 15px;
+}
+
+.nuova{
+  color: grey;
+  width: 360px;
+  position: relative;
+  left: 500px;
+  font-size: 15px;
+
+}
+
+
+.parent:hover .prima{
+color: white;
+}
+
+
