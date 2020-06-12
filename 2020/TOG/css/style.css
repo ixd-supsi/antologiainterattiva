@@ -74,10 +74,12 @@ section{
   color: grey;
   width: 360px;
   position: relative;
-  left: 500px;
+  left: 480px;
   font-size: 15px;
 
 }
+
+
 
 
 .parent:hover .prima{
