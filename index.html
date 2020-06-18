@@ -32,7 +32,7 @@
                 text-decoration: underline;
             }
             ul{
-                margin: 0;
+                margin:0;
                 padding: 0;
                 list-style: none;
             }
@@ -40,10 +40,22 @@
                 margin:0;
             }
             p{
-                margin:0 0 1em 0;
+                margin:0;
             }
             footer{
-                margin:2em 0 0 0;
+                margin:0 0 0 0;
+            }
+            .link {
+                margin-left: -1.25em;
+            }
+            .link:before {
+                display: inline-block;
+                width: 1.25em;
+                content: "→";
+            }
+            hr{
+                opacity: 0.2;
+                margin:1em 0 1em 0;
             }
         </style>
     </head>
@@ -52,8 +64,9 @@
         <p>
             SUPSI<br>
             Primavera 2020<br>
-            <a href="https://github.com/ixd-supsi/antologiainterattiva">→ codice</a>
+            <a class="link" href="https://github.com/ixd-supsi/antologiainterattiva">→ codice</a>
         </p>
+        <hr>
         <ul>
             <li><a href="2020/CAS/">* Filastrocca dei pianeti (Sara Camponovo)</a></li>
             <li><a href="2020/CAF/">Lucciole (Fabienne Carrara)</a></li>
@@ -67,11 +80,11 @@
             <li><a href="2020/TEL/">* Asteroids (Luca Tesi)</a></li>
             <li><a href="2020/TOG/">Aurora polare (Giorgia Tomasi)</a></li>
         </ul>
+        <hr>
         <footer>
-            -
             <ul>
-                <li><a href="https://ixd-supsi.github.io/atlantetecnolgico/">Atlante Tecnologico</a></li>
-                <li><a href="https://ixd-supsi.github.io/quantifiedme/">Quantified me</a></li>
+                <li><a class="link" href="https://ixd-supsi.github.io/atlantetecnolgico/">→ Atlante Tecnologico</a></li>
+                <li><a class="link" href="https://ixd-supsi.github.io/quantifiedme/">→ Quantified me</a></li>
                 <li>Antologia interattiva</a></li>
             </ul>
         </footer>
