@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000020;
+}
+
+.text {
+	font-size: 1.8em;
+	color: white;
+}
+
+.text p {
+	width: 70%;
+	margin: 80px auto 0;
+	padding: 80px 0;
+}
+
+.parallasse {
+	min-height: 600px;
+	background: transparent;
+}
+
+.fadeOut {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.fadeIn {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s linear 0s, opacity 300ms;
+}
