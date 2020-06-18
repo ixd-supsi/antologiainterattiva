@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Esempio Selezione</title>
+	<meta name="description" 							content="Esempio Selezione">
+	<meta name="author"                       			content="Andreas">
+	<meta name="viewport" 								content="width=device-width, initial-scale=1">
+	<meta name="mobile-web-app-capable" 				content="yes">
+	<meta name="apple-mobile-web-app-capable" 			content="yes">
+	<meta name="theme-color" 							content="black">
+	<meta name="msapplication-navbutton-color" 			content="black">
+	<meta name="apple-mobile-web-app-status-bar-style" 	content="black">
+	<style type="text/css" media="screen">
+		body{
+			margin:2em;
+			color:lightgray;
+		}
+		p {
+			margin:0;
+		}
+		.selezionato {
+			color: black;
+		}
+		span {
+			transition: color 500ms;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		<span data-gruppo="1">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Cras sed semper ex. Pellentesque in condimentum justo.
+			In non sapien vulputate turpis ultrices bibendum sed laoreet augue.
+			Vestibulum interdum facilisis rutrum.
+		</span>
+		<span data-gruppo="1">
+			Aliquam id egestas tellus, id aliquet risus.
+			Nulla facilisi. Phasellus a rutrum purus. In hac habitasse platea dictumst.
+			Aenean tellus erat, ultricies non efficitur quis, venenatis convallis risus.
+		</span>
+		<span data-gruppo="1">
+			Cras blandit sapien vitae interdum sodales.
+		</span>
+		<span data-gruppo="2">
+			Morbi scelerisque sed lacus eget pharetra.
+			Fusce diam elit, sodales non suscipit a, malesuada ut orci.
+			Fusce imperdiet urna et orci interdum vehicula. Mauris id varius neque, sed aliquet dolor.
+		</span>
+		<span data-gruppo="3">
+			Nullam malesuada elit id nibh laoreet, aliquam pharetra lacus vestibulum.
+		</span>
+		<span data-gruppo="1">
+			Quisque ac tempus dolor. Sed id libero in justo scelerisque vehicula vitae quis ligula.
+			Nullam risus massa, tincidunt at leo at, eleifend hendrerit urna.
+			Proin ut felis eget mauris ultricies vulputate.
+		</span>
+		<span data-gruppo="2">
+			Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+			Nunc et maximus ex. Donec nec placerat mauris. Sed sed ex quam.
+			Vestibulum imperdiet nulla ac mauris fringilla, non convallis dolor bibendum.
+			Quisque pellentesque nisi dui, vitae euismod lorem feugiat sed.
+			Maecenas turpis eros, efficitur sed pulvinar eu, feugiat id metus.
+		</span>
+		<span data-gruppo="1">
+			Cras aliquam sollicitudin cursus.
+		</span>
+		<span data-gruppo="3">
+			Etiam ac pretium ex. Cras aliquam laoreet turpis a suscipit.
+			Integer placerat mi quis lacinia tempus.
+			Donec sit amet risus ut est accumsan congue pellentesque ornare sapien.
+			Cras eget velit ex.
+		</span>
+		<span data-gruppo="4">
+			Maecenas sollicitudin ante vitae risus lobortis, ultricies sollicitudin justo varius.
+			Morbi euismod dolor erat, ornare placerat ipsum molestie eget.
+			Curabitur semper volutpat pellentesque.
+		</span>
+		<span data-gruppo="5">
+			Aliquam viverra nisl erat, a vestibulum diam euismod sit amet.
+			Interdum et malesuada fames ac ante ipsum primis in faucibus.
+			Pellentesque id suscipit mauris.
+			Cras ac dolor nisi.
+		</span>
+		<span data-gruppo="1">
+			Nulla blandit suscipit turpis.
+		</span>
+		<span data-gruppo="2">
+			Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+			Duis volutpat porta nulla eu lobortis.
+		</span>
+		<span data-gruppo="4">
+			Curabitur finibus sem vel quam euismod, id tincidunt ligula consectetur.
+			Nulla vel nunc eu tortor venenatis dapibus.
+		</span>
+		<span data-gruppo="3">
+			Pellentesque finibus accumsan est, at pulvinar nibh ornare a.
+		</span>
+	</p>
+
+	<script>
+		const contenitore = document.querySelector('p')
+		contenitore.querySelectorAll('span').forEach(function(el){
+			el.addEventListener('mouseenter', function(ev){
+				const g = ev.target.dataset.gruppo
+				contenitore.querySelectorAll('[data-gruppo="' + g + '"]').forEach(function(el){
+					el.classList.add('selezionato')
+				})
+			})
+			el.addEventListener('mouseleave', function(ev){
+				const g = ev.target.dataset.gruppo
+				contenitore.querySelectorAll('[data-gruppo="' + g + '"]').forEach(function(el){
+					el.classList.remove('selezionato')
+				})
+			})
+		})
+	</script>
+</body>
+</html>

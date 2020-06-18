@@ -1,0 +1,23 @@
+.main-content {
+    float: left;
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-family: sans-serif;
+    
+}
+
+.costellazione {
+    
+    float: left;
+    margin-left: 300px;
+    margin-top: 40px;
+    
+    }
+
+img {
+    
+   margin-top: -200px; 
+   margin-left: 400px;
+
+}

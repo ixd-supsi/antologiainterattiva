@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>aurora polare</title>
+	<meta name="description" 							content="Esempio Shader">
+	<meta name="author"                       			content="Andreas">
+	<meta name="viewport" 								content="width=device-width, initial-scale=1">
+	<meta name="mobile-web-app-capable" 				content="yes">
+	<meta name="apple-mobile-web-app-capable" 			content="yes">
+	<meta name="theme-color" 							content="black">
+	<meta name="msapplication-navbutton-color" 			content="black">
+	<meta name="apple-mobile-web-app-status-bar-style" 	content="black">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<canvas></canvas>
+
+	<section class="parent">
+
+	<div class="vecchia">
+		<div class="titolo"><span data-gruppo="1">Nordurljos</span></div>
+		<span data-gruppo="2">...appare come la fiamma di un fuoco intenso visto da lontano. Strali appuntiti di disuguale e variabilissima grandezza dardeggiano verso l’alto nell’aria, così che ora l’uno ora l’altro è il più alto,<br> e la luce ondeggia come una vampata splendente... </span>
+		<span data-gruppo="3"><br>e talvolta sembra sprigionare scintille come un ferro incandescente estratto dalla forgia.</span>
+		Come la notte termina e si avvicina l’alba, incomincia a impallidire e scompare quando prorompe il giorno...  
+		<span data-gruppo="4">Noi non sappiamo nulla della natura delle <span data-gruppo="5">Luci del Nord</span></span>,
+		ma l’uomo saggio propone idee e semplici congetture, e crede solo in ciò che è comune e probabile 
+		<span data-gruppo="6">(e qui seguono una serie di teorie basate sul fatto che le luci del nord sono più comuni in alcuni luoghi che in altri)...</span>
+		<div class="data">Kongespeil<br>1250 ca.</div>
+	</div>
+
+
+	<div class="nuova">
+		<div class="titolo"><span data-gruppo="1">Aurora polare</span></div>
+		<span data-gruppo="2">Fenomeno luminoso dell’alta atmosfera, che si manifesta con forme diverse: archi, bande, raggi, cortine, corone, luci diffuse.</span> 
+		<span data-gruppo="5">Prende il nome di aurora boreale nell’emisfero nord e di aurora australe nell’emisfero sud.</span> 
+		<span data-gruppo="2">Alcune immobili e invarianti di forma, altre ondeggianti, possono avere varie colorazioni (tipica quella verdastra).</span><br>
+		<span data-gruppo="6"> Il limite inferiore della luce aurorale è a una quota di 100 km; quello superiore va da 400 km a 1000 km. 
+		La maggiore frequenza delle aurore polari (circa 100 ogni anno) si ha alle latitudine di 60-70°; raramente si verificano alle basse latitudini. </span>[…]
+	 	<span data-gruppo="4"><br>Le aurore dipendono dall’interazione del vento solare (plasma di protoni ed elettroni emesso dal Sole) con il campo magnetico terrestre: le particelle, dotate di alta velocità, si avvolgono spiralizzando attorno alle linee di forza del campo riflettendosi nelle regioni polari dove l’intensità di questo è maggiore e le linee di forza tendono a convergere.</span>
+		<span data-gruppo="3">La luce aurorale è emessa dagli atomi e dalle molecole dell’alta atmosfera eccitati nelle collisioni con le particelle del vento solare.</span>
+	 	<div class="data"> Enciclopedia online <br>Treccani</div>	
+	</div> 
+ 	</section>
+
+ 		<script>
+		const contenitore = document.querySelector('section')
+		contenitore.querySelectorAll('span').forEach(function(el){
+			el.addEventListener('mouseenter', function(ev){
+				const g = ev.target.dataset.gruppo
+				contenitore.querySelectorAll('[data-gruppo="' + g + '"]').forEach(function(el){
+					el.classList.add('selezionato')
+				})
+			})
+			el.addEventListener('mouseleave', function(ev){
+				const g = ev.target.dataset.gruppo
+				contenitore.querySelectorAll('[data-gruppo="' + g + '"]').forEach(function(el){
+					el.classList.remove('selezionato')
+				})
+			})
+		})
+	</script>
+
+
+	
+	<script src="main.js" type="module"></script>
+	
+	<script src="../common/common.js" type="module"></script>
+
+</body>
+</html>
