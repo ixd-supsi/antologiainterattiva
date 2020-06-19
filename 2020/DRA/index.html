@@ -2,29 +2,74 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="main.css">
+	<title>Il suono dello spazio</title>
+
+<style type="text/css" media="screen">
+
+		html {
+			background-color: black;
+		}
+		body {
+			padding:0;
+			margin:0;
+			height:100%;
+			font-family: "Roboto", sans-serif;
+			font-size: 18px;
+		}
+
+		canvas {
+			position: absolute;
+			display:block;
+			top:0;
+			left:0;
+			width:100vw;
+			height:100vh;
+		}
+
+		h1 {
+			color: black;
+			margin-left: 13%;
+			position: absolute;
+			margin-top: 11%; 
+
+		}
+
+
+		p {
+ 			-webkit-hyphens: auto;
+    		-moz-hyphens: auto;
+        	hyphens: auto;
+
+			position: absolute;
+			margin-left: 13%;
+			margin-top: 16%;
+			margin-right: 50%;
+			padding-right: -10%;
+		}
+
+	</style>
 </head>
+
 <body>
-	<audio autoplay="autoplay" loop>  
-  		<source src="" />  
-	</audio>
-	<h1>Il suono dello spazio</h1>
 
-	<div class="content">
-  		<div class="circle">
-  		</div>
-	</div>
+	<canvas></canvas>
 
-	<div class="testo">
-		<p>Lo spazio non è silenzioso.
-			L’astronave Voyager 1 della NASA ha catturato questi suoni nello spazio interstellare. Lo strumento ad onda al plasma di Voyager 1 ha rilevato le vibrazioni del denso plasma interstellare, o gas ionizzato, da ottobre a novembre 2012 e da aprile a maggio 2013.<br>
-			Quanto più aumenta l’intensità e la densità del plasma, tanto più aumentano le frequenze delle onde diventando più o meno “forti”.
-			La colonna sonora riproduce l’ampiezza e la frequenza delle onde del plasma come “ascoltate” da Voyager 1.<br> Le onde rilevate dalle antenne dello strumento possono essere semplicemente amplificate e riprodotte attraverso un altoparlante. Queste frequenze sono nel raggio udito dalle orecchie umane.<br>
-			Gli scienziati hanno notato che ogni evento comportava un tono crescente, ciò significa una densità in costante aumento.
-			Quando gli scienziati hanno estrapolato queste onde, hanno dedotto che Voyager 1 ha incontrato per la prima volta il plasma interstellare nell’agosto 2012.</p>
-	</div>	
+		<audio autoplay="autoplay" loop>  
+  			<source src="SuonoEEEE.mp3" />  
+		</audio>
+
+		<h1>
+			Il suono dello spazio
+		</h1>
+		<p>Lo spazio non è silenzioso.<br>
+			L’astronave Voyager 1 della NASA ha catturato questi suoni nello spazio interstellare. Lo strumento ad onda al plasma di Voyager 1 ha rilevato le vibrazioni del denso plasma interstellare, o gas ionizzato, da ottobre a novembre 2012 e da aprile a maggio 2013. Quanto più aumenta l’intensità e la densità del plasma, tanto più aumentano le frequenze delle onde diventando più o meno “forti”. La colonna sonora riproduce l’ampiezza e la frequenza delle onde del plasma come “ascoltate” da Voyager 1. Le onde rilevate dalle antenne dello strumento possono essere semplicemente amplificate e riprodotte attraverso un altoparlante. Queste frequenze sono nel raggio udito dalle orecchie umane. Gli scienziati hanno notato che ogni evento comportava un tono crescente, ciò significa una densità in costante aumento. Quando gli scienziati hanno estrapolato queste onde, hanno dedotto che Voyager 1 ha incontrato per la prima volta il plasma interstellare nell’agosto 2012.
+		</p>
+
+
+	<script src="main.js" type="module"></script>
+	<script src="../common/common.js" type="module"></script>
+
+
 
 </body>
 </html>
