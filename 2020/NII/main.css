@@ -25,7 +25,7 @@ body{
 }
 
 h1{
-	font-size: 30px;
+	font-size: 32px;
 	margin-top: 10%;
 	margin-bottom: 1.5%;
 	margin-left: 16%;
@@ -34,9 +34,9 @@ h1{
 }
 
 .poesia{
-	line-height: 1.7;
+	line-height: 1.8;
 	position: relative;
-	font-size: 22px;
+	font-size: 20px;
 	margin-left: 16%; 
 	margin-bottom: 2%;
 	opacity: 0.9;
@@ -61,7 +61,7 @@ h1{
 .uno:hover:after{
 	content: "Luna benevola, io mi ricordo";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 }
 
@@ -72,7 +72,7 @@ h1{
 .due:hover:after{
 	content: "che, un anno fa, su questo colle";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 
 }
@@ -84,7 +84,7 @@ h1{
 .tre:hover:after{
 	content: "venivo a contemplarti, pieno di dolore:";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 
 }
@@ -96,7 +96,7 @@ h1{
 .quattro:hover:after{
 	content: "e tu eri sospesa su quella selva";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 }
 
@@ -107,7 +107,7 @@ h1{
 .cinque:hover:after{
 	content: "proprio come fai ora, che la rischiari completamente.";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 }
 
@@ -118,7 +118,7 @@ h1{
 .sei:hover:after{
 	content: "Ma ai miei occhi il tuo aspetto appariva velato e tremante";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 }
 
@@ -129,7 +129,7 @@ h1{
 .sette:hover:after{
 	content: "a causa delle lacrime che mi sgorgavano dagli occhi,";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 }
 
@@ -140,7 +140,7 @@ h1{
 .otto:hover:after{
 	content: "poiché la mia vita era piena di tormenti:";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 }
 
@@ -152,7 +152,7 @@ h1{
 .nove:hover:after{
 	content: "e, o mia cara luna, è così tuttora";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 }
 
@@ -163,7 +163,7 @@ h1{
 .dieci:hover:after{
 	content: "né cambia modo di essere. E tuttavia mi è gradito";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 }
 
@@ -174,7 +174,7 @@ h1{
 .undici:hover:after{
 	content: "il ricordo, e il richiamare alla mente il tempo";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 }
 
@@ -185,7 +185,7 @@ h1{
 .dodici:hover:after{
 	content: "della mia sofferenza. Oh come torna gradito e prezioso";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 }
 
@@ -196,7 +196,7 @@ h1{
 .tredici:hover:after{
 	content: "durante la giovinezza - quando la speranza ha ancora";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 }
 
@@ -207,7 +207,7 @@ h1{
 .quattordici:hover:after{
 	content: "un lungo cammino di fronte a sé mentre la memoria";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 }
 
@@ -218,7 +218,7 @@ h1{
 .quindici:hover:after{
 	content: "ne ha uno breve - il ricordarsi di ciò che è passato,";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 }
 
@@ -229,7 +229,7 @@ h1{
 .sedici:hover:after{
 	content: "anche se è triste, ed anche se la sofferenza continua!";
 	font-family: "Judson";
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
 
 }
