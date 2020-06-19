@@ -11,9 +11,9 @@
 }
 
 body{
-	background-color: #140c05/*#0c0c0d*/;
+	background-color: #070000/*#0c0c0d*/;
 	font-family: "UnifrakturMaguntia";
-	color: #e6ddd3;
+	color: #fff8f2;
 }
 
 .container{
@@ -28,7 +28,7 @@ h1{
 	font-size: 30px;
 	margin-top: 10%;
 	margin-bottom: 1.5%;
-	margin-left: 15%;
+	margin-left: 16%;
 	position: relative;
 	opacity: 0.9;
 }
@@ -37,14 +37,14 @@ h1{
 	line-height: 1.7;
 	position: relative;
 	font-size: 22px;
-	margin-left: 15%; 
+	margin-left: 16%; 
 	margin-bottom: 2%;
 	opacity: 0.9;
 }
 
 .fine{
 	font-size:12px;
-	margin-left: 15%;
+	margin-left: 16%;
 	position: relative;
 	line-height: 0.2;
 	opacity: 0.9;
@@ -244,7 +244,7 @@ h1{
 	position: fixed;
 	width: 1800px;
 	height: 1780px;
-	background: radial-gradient(circle closest-side, white, #140c05);
+	background: radial-gradient(circle closest-side, white, #070000);
 	border-radius: 50%;
 	pointer-events: none;
 	transform: translate(-50%,-50%);
