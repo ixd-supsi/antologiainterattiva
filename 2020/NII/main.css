@@ -19,7 +19,7 @@ body{
 .container{
 	margin-left: 10%;
 	text-align: left; 
-	letter-spacing: 1.7px;
+	letter-spacing: 1.6px;
 
 
 }
@@ -34,7 +34,7 @@ h1{
 }
 
 .poesia{
-	line-height: 1.7;
+	line-height: 1.65;
 	position: relative;
 	font-size: 20px;
 	margin-left: 16%; 
