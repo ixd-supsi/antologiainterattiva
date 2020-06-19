@@ -6,23 +6,24 @@ body {
 }
 
 canvas {
-    position: absolute;
-      display:block;
-      width:100vw;
-      height:100vh;
-      left:0;
-      top:0;
-    }
+  position: absolute;
+  display:block;
+  width:100vw;
+  height:100vh;
+  left:0;
+  top:0;
+}
 
-    .selezionato {
+
+.selezionato {
       color: white;
 
-    }
+}
 
-    span {
+
+span {
       transition: color 200ms !important;
-
-    }
+}
 
 span span{
   transition: none;
@@ -30,10 +31,14 @@ span span{
 
 
 section{
-  margin-top: 90px;
-  margin-left: auto;
+  margin-top:90px;
   margin-right: auto;
-  width: 900px;
+  margin-left: auto;
+  width: 850px;
+
+
+
+
 }
 
 
@@ -58,17 +63,17 @@ section{
 }*/
 
 .vecchia{
-  color: grey;
-  width: 360px;
+  color: #606060;
+  width: 355px;
   position: absolute;
   font-size: 15px;
 }
 
 .nuova{
-  color: grey;
-  width: 360px;
+  color: #606060;
+  width: 355px;
   position: relative;
-  left: 500px;
+  float: right;
   font-size: 15px;
 
 }
