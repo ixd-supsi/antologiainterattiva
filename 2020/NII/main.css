@@ -1,0 +1,266 @@
+*, *:before, *:after{
+	box-sizing: border-box;}
+
+.sfondo{
+	position: fixed;
+	width: 100vw;
+	opacity: 0.9;
+	margin-top: -20px;
+	margin-left: -20px;
+	display: flex;
+}
+
+body{
+	background-color: #070000/*#0c0c0d*/;
+	font-family: "Arapey";
+	color: #fffbf6;
+}
+
+.container{
+	margin-left: 10%;
+	text-align: left; 
+	letter-spacing: 1.7px;
+
+
+}
+
+h1{
+	font-size: 32px;
+	margin-top: 10%;
+	margin-bottom: 1.5%;
+	margin-left: 16%;
+	position: relative;
+	opacity: 0.9;
+}
+
+.poesia{
+	line-height: 1.65;
+	position: relative;
+	font-size: 20px;
+	margin-left: 16%; 
+	margin-bottom: 2%;
+}
+
+.fine{
+	font-size:12px;
+	margin-left: 16%;
+	position: relative;
+	line-height: 0.2;
+	opacity: 0.9;
+}
+
+
+
+
+
+
+.uno:after{
+	content: "O graziosa luna, io mi rammento";
+}
+.uno:hover:after{
+	content: "Luna benevola, io mi ricordo";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+}
+
+
+.due:after{
+	content: "che, or volge l'anno, sovra questo colle";
+}
+.due:hover:after{
+	content: "che, un anno fa, su questo colle";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+
+}
+
+
+.tre:after{
+	content: "io venia pien d'angoscia a rimirarti:";
+}
+.tre:hover:after{
+	content: "venivo a contemplarti, pieno di dolore:";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+
+}
+
+
+.quattro:after{
+	content: "e tu pendevi allor su quella selva";
+}
+.quattro:hover:after{
+	content: "e tu eri sospesa su quella selva";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+}
+
+
+.cinque:after{
+	content: "siccome or fai, che tutta la rischiari.";
+}
+.cinque:hover:after{
+	content: "proprio come fai ora, che la rischiari completamente.";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+}
+
+
+.sei:after{
+	content: "Ma nebuloso e tremulo dal pianto";
+}
+.sei:hover:after{
+	content: "Ma ai miei occhi il tuo aspetto appariva velato e tremante";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+}
+
+
+.sette:after{
+	content: "che mi sorgea sul ciglio, alle mie luci";
+}
+.sette:hover:after{
+	content: "a causa delle lacrime che mi sgorgavano dagli occhi,";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+}
+
+
+.otto:after{
+	content: "il tuo volto apparia, ché travagliosa";
+}
+.otto:hover:after{
+	content: "poiché la mia vita era piena di tormenti:";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+}
+
+
+.nove:after{
+	content: "era mia vita: ed è, né cangia stile,";
+}
+
+.nove:hover:after{
+	content: "e, o mia cara luna, è così tuttora";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+}
+
+
+.dieci:after{
+	content: "o mia diletta luna. E pur mi giova";
+}
+.dieci:hover:after{
+	content: "né cambia modo di essere. E tuttavia mi è gradito";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+}
+
+
+.undici:after{
+	content: "la ricordanza, e il noverar l'etate";
+}
+.undici:hover:after{
+	content: "il ricordo, e il richiamare alla mente il tempo";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+}
+
+
+.dodici:after{
+	content: "del mio dolore. Oh come grato occorre";
+}
+.dodici:hover:after{
+	content: "della mia sofferenza. Oh come torna gradito e prezioso";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+}
+
+
+.tredici:after{
+	content: "nel tempo giovanil, quando ancor lungo";
+}
+.tredici:hover:after{
+	content: "durante la giovinezza - quando la speranza ha ancora";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+}
+
+
+.quattordici:after{
+	content: "la speme e breve ha la memoria il corso,";
+}
+.quattordici:hover:after{
+	content: "un lungo cammino di fronte a sé mentre la memoria";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+}
+
+
+.quindici:after{
+	content: "il rimembrar delle passate cose,"
+}
+.quindici:hover:after{
+	content: "ne ha uno breve - il ricordarsi di ciò che è passato,";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+}
+
+
+.sedici:after{
+	content: "ancor che triste, e che l'affanno duri!";
+}
+.sedici:hover:after{
+	content: "anche se è triste, ed anche se la sofferenza continua!";
+	font-family: "Judson";
+	font-size: 19px;
+	color: white;
+
+}
+
+
+
+
+
+
+.pointer{
+	margin-left: 70%;
+	position: fixed;
+	width: 1800px;
+	height: 1780px;
+	background: radial-gradient(circle closest-side, white, #070000);
+	border-radius: 50%;
+	pointer-events: none;
+	transform: translate(-50%,-50%);
+	opacity: 0.55;
+
+}
+
+/*.pointer_due{
+	margin-left: 63%;
+	margin-top: 15%;
+	position: fixed;
+	width: 250px;
+	height: 250px;
+	background: radial-gradient(circle closest-side, white,white);
+	border-radius: 50%;
+	pointer-events: none;
+	transform: translate(-50%,-50%);
+	opacity: 0.1;
+
+}*/
