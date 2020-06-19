@@ -26,10 +26,10 @@ uniform vec2 resolution;
 uniform float time;
 uniform vec2 mouse;
 
-const int   complexity      = 13;    // More points of color.
-const float mouse_factor    = 45.0;  // Makes it more/less jumpy.
-const float mouse_offset    = 15.0;   // Drives complexity in the amount of curls/cuves.  Zero is a single whirlpool.
-const float fluid_speed     = 25.0;  // Drives speed, higher number will make it slower.
+const int   complexity      = 10;    // More points of color.
+const float mouse_factor    = 1000.0;  // Makes it more/less jumpy.
+const float mouse_offset    = 36.0;   // Drives complexity in the amount of curls/cuves.  Zero is a single whirlpool.
+const float fluid_speed     = 30.0;  // Drives speed, higher number will make it slower.
 
 const float Pi = 3.14159;
 
@@ -54,8 +54,8 @@ void main() {
 
   
   float r=0.0;
-  float b=(sin(0.32+p.y)+1.0)*0.1;
-  float g=(sin(0.6+p.y)+1.0)*0.15;
+  float b=(sin(0.2+p.y)+1.0)*0.07;
+  float g=(sin(0.5+p.y)+1.0)*0.1;
 
 
   gl_FragColor=vec4(r,g,b, 1.0);
