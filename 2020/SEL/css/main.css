@@ -1,0 +1,25 @@
+.main-content {
+    /*float: left;*/
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-family: sans-serif;
+    
+}
+
+#illustrazione {
+    /*margin-top: 200px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#costellazione {
+    float: left;
+    /*margin-left: 300px;
+    margin-top: 40px;*/    
+}
+
+#margherita {
+    margin-top: 400px; 
+    margin-left: 40px;
+}
