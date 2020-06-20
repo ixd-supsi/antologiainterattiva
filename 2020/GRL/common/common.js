@@ -21,7 +21,7 @@ function run() {
     const mini_audio = document.createElement("div")
     mini_audio.style.cssText = `
         position: fixed;
-        top: 4px;;
+        top: 4px;
         right: 0;
         z-index: 1000;
         display: none;
