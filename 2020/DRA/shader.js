@@ -34,7 +34,7 @@ void main() {
     float d = sdCircle(p + vec2(-0.7, 0.0), 3.25);
 
     vec3 col = vec3(0.5) - sign(d);
-    col *= 0.82 - exp(-0.24 * abs(d));
+    col *= 0.83 - exp(-0.26 * abs(d));
     col *= 0.55 + 0.3*cos(15.0*d - time*3.8);
     //col = mix( col, vec3(1.0), 0.0-smoothstep(0.0,0.01,abs(d)) );
     gl_FragColor = vec4(col, 0.9);
