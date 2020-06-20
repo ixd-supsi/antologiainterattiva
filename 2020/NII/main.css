@@ -20,14 +20,14 @@ body{
 	margin-left: 10%;
 	text-align: left; 
 	letter-spacing: 1.7px;
-
-
 }
+
+
 
 h1{
 	font-size: 32px;
 	margin-top: 10%;
-	margin-bottom: 1.5%;
+	margin-bottom: 2%;
 	margin-left: 16%;
 	position: relative;
 	opacity: 0.9;
@@ -51,6 +51,46 @@ h1{
 
 
 
+/*
+.titolo + .info{
+	opacity:0;
+
+}
+
+.titolo:hover + .info{
+	opacity:1;
+	font-family: "Judson";
+	font-size: 12px;
+	margin-left: 50%;
+	width: 23%;
+	margin-bottom: -1.1%;
+}
+
+*/
+
+
+.info{
+	position: relative;
+	display: inline-block;
+}
+
+.titolo + .info{
+	visibility: hidden;
+	width: 25%;
+	background-color: black 0.5;
+	position: absolute;
+	margin-left: 50%;
+
+}
+
+.titolo:hover + .info{
+	visibility: visible;
+	line-height: 1.3;
+	font-family: "Judson";
+	font-size: 13px;
+	color: #ffbbbf;
+ 
+}
 
 
 
@@ -61,7 +101,7 @@ h1{
 	content: "Luna benevola, io mi ricordo";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 }
 
 
@@ -72,7 +112,7 @@ h1{
 	content: "che, un anno fa, su questo colle";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 
 }
 
@@ -84,7 +124,7 @@ h1{
 	content: "venivo a contemplarti, pieno di dolore:";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 
 }
 
@@ -96,7 +136,7 @@ h1{
 	content: "e tu eri sospesa su quella selva";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 }
 
 
@@ -107,7 +147,7 @@ h1{
 	content: "proprio come fai ora, che la rischiari completamente.";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 }
 
 
@@ -118,7 +158,7 @@ h1{
 	content: "Ma ai miei occhi il tuo aspetto appariva velato e tremante";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 }
 
 
@@ -129,7 +169,7 @@ h1{
 	content: "a causa delle lacrime che mi sgorgavano dagli occhi,";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 }
 
 
@@ -140,7 +180,7 @@ h1{
 	content: "poiché la mia vita era piena di tormenti:";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 }
 
 
@@ -152,7 +192,7 @@ h1{
 	content: "e, o mia cara luna, è così tuttora";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 }
 
 
@@ -163,7 +203,7 @@ h1{
 	content: "né cambia modo di essere. E tuttavia mi è gradito";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 }
 
 
@@ -174,7 +214,7 @@ h1{
 	content: "il ricordo, e il richiamare alla mente il tempo";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 }
 
 
@@ -185,7 +225,7 @@ h1{
 	content: "della mia sofferenza. Oh come torna gradito e prezioso";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 }
 
 
@@ -196,7 +236,7 @@ h1{
 	content: "durante la giovinezza - quando la speranza ha ancora";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 }
 
 
@@ -207,7 +247,7 @@ h1{
 	content: "un lungo cammino di fronte a sé mentre la memoria";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 }
 
 
@@ -218,7 +258,7 @@ h1{
 	content: "ne ha uno breve - il ricordarsi di ciò che è passato,";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 }
 
 
@@ -229,7 +269,7 @@ h1{
 	content: "anche se è triste, ed anche se la sofferenza continua!";
 	font-family: "Judson";
 	font-size: 19px;
-	color: white;
+	color: #ffbbbf;
 
 }
 
@@ -257,7 +297,7 @@ h1{
 	position: fixed;
 	width: 250px;
 	height: 250px;
-	background: radial-gradient(circle closest-side, white,white);
+	background: radial-gradient(circle closest-side, #ffbbbf,#ffbbbf);
 	border-radius: 50%;
 	pointer-events: none;
 	transform: translate(-50%,-50%);
