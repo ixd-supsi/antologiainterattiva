@@ -2,9 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Esempio Particelle</title>
-	<meta name="description" 							content="Esempio Particelle">
-	<meta name="author"                       			content="Andreas">
+	<title>Luca Grisoni - Zero Gravity</title>
+	<meta name="description" 							content="Zero Gravity">
+	<meta name="Luca Grisoni"                       	content="Andreas">
 	<meta name="viewport" 								content="width=device-width, initial-scale=1">
 	<meta name="mobile-web-app-capable" 				content="yes">
 	<meta name="apple-mobile-web-app-capable" 			content="yes">
@@ -13,8 +13,9 @@
 	<meta name="apple-mobile-web-app-status-bar-style" 	content="black">
 	<style type="text/css" media="screen">
 		body, html{
-			margin:0;
+			margin:;
 		}
+
 		canvas {
 			position: absolute;
 			display:block;
@@ -23,11 +24,153 @@
 			left:0;
 			top:0;
 		}
+
 	</style>
 </head>
 <body>
 	<canvas></canvas>
-	<script src="main.js" type="module"></script>
-	<script src="../common/common.js" type="module"></script>
+		<script>
+
+			const canvas = document.querySelector("canvas")
+			const ctx = canvas.getContext('2d')
+
+			const FONT = "20px Helvetica, Arial, sans-serif"
+			ctx.font = FONT
+
+			const testo = []
+			testo.push("Gavitazione")
+			testo.push("/gra·vi·ta·zió·ne/")
+			testo.push("Sostantivo femminile")
+			testo.push("")
+			testo.push("La gravità, detta anche gravitazione, è la forza universale di attrazione")
+			testo.push("che agisce tra tutta la materia. È di gran lunga la forza più debole co-")
+			testo.push("nosciuta in natura e quindi non ha alcun ruolo nel determinare le pro-")
+			testo.push("prietà interne della materia quotidiana. D’altra parte, attraverso la sua")
+			testo.push("lunga portata e la sua azione universale, controlla le traiettorie dei corpi")
+			testo.push("nel sistema solare e altrove nell’universo e le strutture e l’evoluzione")
+			testo.push("delle stelle, delle galassie e dell’intero cosmo. Sulla Terra tutti i corpi")
+			testo.push("hanno un peso, o forza di gravità verso il basso, proporzionale alla loro")
+			testo.push("massa, che la massa terrestre esercita su di loro. La gravità si misura")
+			testo.push("in base all’accelerazione che dà agli oggetti che cadono liberamente.")
+			testo.push("Sulla superficie terrestre l’accelerazione della gravità è di circa 9,8 me-")
+			testo.push("tri al secondo per secondo. Così, per ogni secondo che un oggetto è")
+			testo.push("in caduta libera, la sua velocità aumenta di circa 9,8 metri al secondo.")
+			testo.push("Sulla superficie della Luna l’accelerazione di un corpo in caduta libera")
+			testo.push("è di circa 1,6 metri al secondo per secondo.")
+			testo.push("")
+			testo.push("Le opere di Isaac Newton e Albert Einstein dominano lo sviluppo della")
+			testo.push("teoria gravitazionale. La teoria classica della forza gravitazionale di")
+			testo.push("Newton ha avuto il sopravvento sul suo Principio, pubblicato nel 1687,")
+			testo.push("fino all’opera di Einstein all’inizio del XX secolo. La teoria di Newton è")
+			testo.push("sufficiente anche oggi per tutte le applicazioni, tranne che per quelle")
+			testo.push("più precise. La teoria della relatività generale di Einstein prevede solo")
+			testo.push("minime differenze quantitative rispetto alla teoria newtoniana, tranne in")
+			testo.push("alcuni casi particolari. Il significato principale della teoria di Einstein è il")
+			testo.push("suo radicale allontanamento concettuale dalla teoria classica e le sue")
+			testo.push("implicazioni per un’ulteriore crescita del pensiero fisico.")
+			testo.push("")
+			testo.push("Il lancio di veicoli spaziali e gli sviluppi della ricerca su di essi hanno")
+			testo.push("portato a grandi miglioramenti nelle misurazioni della gravità intorno")
+			testo.push("alla Terra, ad altri pianeti e alla Luna e negli esperimenti sulla natura")
+			testo.push("della gravitazione.")
+
+
+			const particelle = []
+
+			for (let j=0; j<testo.length; j++){
+			    let x = 20
+			    let y = 40 + j * 24             //interlinea
+			    const riga = testo[j]
+			    for (let i=0; i<riga.length; i++){
+			        const char = riga[i]
+			        const w = ctx.measureText(char).width
+			        const particella = {
+			            c   : char,
+			            x   : x,
+			            y   : y,
+			            w   : w,
+			            h   : 25,
+			            dx  : x,
+			            dy  : y,
+			            vx  : 0,
+			            vy  : 0,
+			            ang : 0
+			        }
+			        x += w
+			        if (char != " ") {
+			            particelle.push(particella)
+			        }
+			    }
+			}
+
+			const pointer = {
+			    x : 0,
+			    y : 0
+			}
+
+			canvas.addEventListener("mousemove", function(e){
+			    pointer.x = e.clientX
+			    pointer.y = e.clientY
+			})
+
+			function loop(t){
+			    const r = 1//window.devicePixelRatio
+			    const w = Math.floor(ctx.canvas.clientWidth * r)
+			    const h = Math.floor(ctx.canvas.clientHeight * r)
+
+			    // Resize
+			    if (canvas.width != w || canvas.height != h){
+			        canvas.width = w
+			        canvas.height = h
+			    }
+
+			    for (const p of particelle) {
+			        let dx = p.x - pointer.x
+			        let dy = p.y - pointer.y
+			        const distanza = Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2))
+
+			        if (distanza < 30) {
+			            dx = dx / 30
+			            dy = dy / 30
+			            p.vx = dx
+			            p.vy = dy
+			            p.dx += dx * (30 - distanza)
+			            p.dy += dy * (30 - distanza)
+			        }
+
+			        p.vx *= 1
+			        p.vy *= 1
+			        p.ang += p.vx * 0.06 + p.vy * 0.06
+			        p.dx += p.vx
+			        p.dy += p.vy
+			        p.x += (p.dx - p.x) * 0.06
+			        p.y += (p.dy - p.y) * 0.06
+			    }
+
+			    ctx.save()
+			    ctx.font = FONT
+			    ctx.fillStyle = 'black'
+			    ctx.fillRect(0, 0, w, h)
+			    ctx.fillStyle = 'white'
+
+			    for (const p of particelle) {
+			        ctx.save()
+			        ctx.translate(p.x, p.y)
+			        ctx.rotate(p.ang)
+			        ctx.fillText(p.c, 0, 0)
+			        ctx.restore()
+			    }
+
+			    ctx.restore()
+			    requestAnimationFrame(loop)
+			}
+
+			requestAnimationFrame(loop)
+
+		</script>
+
+		<script src="common/common.js" type="module"></script>
+
+
 </body>
 </html>
