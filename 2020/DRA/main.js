@@ -17,12 +17,6 @@ const pointer = {
     pressed : false
 }
 
-canvas.addEventListener('mousemove', function(e){
-    pointer.px = pointer.x
-    pointer.py = pointer.y
-    pointer.x  = e.pageX
-    pointer.y  = e.pageY
-})
 
 // 1. Vertex & fragment shaders
 const v_shader = GLU.compileShader(gl, shader_sources.vertex, gl.VERTEX_SHADER)
