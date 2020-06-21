@@ -2,74 +2,60 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Sequencer test</title>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js"></script>
+		<title>Fasi lunari</title>
 		<style type="text/css">
+			body   { margin:0; padding:0; }
+			canvas {
+				background-color: rgb(0,0,0);
+				display: block;
+			}
 
-		body {
-			background-color: black;
-		}
-		.container {
-  		width: 100%;
-  		margin-top: 15px;
-		}
-
-		.bar {
-		  -webkit-appearance: none;
-		  width: 100%;
-		  height: 20px;
-		  border: 1px solid white;
-		  background-color: black;
-		}
-
-		.bar::-webkit-slider-thumb {
-	  	-webkit-appearance: none;
-	  	appearance: none;
-	  	width: 20px;
-	  	height: 20px;
-	  	background: white;
-	  	cursor: pointer;
-		}
-
-
-		img {
-			display: block;
-		  	margin-left: auto;
-		  	margin-right: auto;
-		  	width: 50%;
-		}
-
-
-		p {
-			color: white;
-			font-family: monospace;
-			font-size: 16px;
-			margin-top: 10px;
-			position: absolute;
-		}
+			p {
+				color:white;
+				position: absolute;
+				top: 50px;
+			}
 
 		</style>
 	</head>
 	<body>
+		<canvas></canvas>
+		<p id="start"></p>
+	</body>
+	<script type="module">
 
+		import Sequencer from './sequencer/sequencer.js';
+
+
+		const canvas = document.querySelector("canvas")
+
+		const s = Sequencer.make({
+			canvas           : canvas,
+			from             : 'img/1.jpg',
+			to               : 'img/366.jpg',
+			direction        : "x",
+			playMode         : "hover",
+			scaleMode        : "contain",
+			showLoadedImages : false,
+			hiDPI           : false,
+			imageLoad        : function(e){
+				//console.log("[id: " + e.id + "] " + e.count + "/" + e.total);
+			},
+			queueComplete    : function(e){
+				// console.log(e);
+			}
+		});
+
+		s.size(window.innerWidth, window.innerHeight);
+
+		window.addEventListener('resize', function(){
+			s.size(window.innerWidth, window.innerHeight);
+		});
 		
-	
-<input id="val" type="range" name="rangeInput" min="0"  max="365" value="0" class="bar"/>
 
 
-    <p id="start">1 Gennaio 2020 <br> 403898km <br> Primo quarto</p>
+		function update(v) {
 
-<div class="container">
- <img id="img" src="1.jpg">
-</div>
- 
-
-	<script>
-
-		function update(e) {
-
-			const v = parseInt(e.target.value)
 
 			let html = ""
 
@@ -77,19 +63,31 @@
 			html += date[v].distanza+"km<br>"
 			html += date[v].fase+"<br>"
         	
-        	document.getElementById("img").src = (v+1) + ".jpg";
+        
 	     	document.getElementById("start").innerHTML = html;
-
-		console.log(v)
 		
 		}
 
+		canvas.addEventListener("mousemove",function(e){
 
+			const x = e.offsetX
 
-		document.querySelector("#val").addEventListener("input", update)
+			const w = canvas.width
 
-	   
-	  	const date =[
+			const t = date.length
+
+			const id = constrain(Math.floor(x / w * t), 0, t - 1);
+			update(id)   
+
+		})
+
+		function constrain(v, a, b){
+		    if (v < a) return a;
+		    if (v > b) return b;
+		    return v;
+		}
+
+		const date =[
 	  		{data:"1 Gennaio 2020", distanza: 403898, fase:"Primo quarto"},
 	  		{data:"2 Gennaio 2020", distanza: 404617, fase:"Gibbosa crescente"},
 	  		{data:"3 Gennaio 2020", distanza: 404042, fase:"Gibbosa crescente"},
@@ -469,16 +467,11 @@
 	  		{data:"31 Dicembre 2020", distanza: 404717, fase:"Gibbosa calante"},
 
 	  	]
-	 	
-	 	var slider = document.getElementById("val");
-    	
-    	slider.addEventListener("mousemove", function(){
-    		var x = slider.value;
-    	})
 
+	  	update(0)
 
 	</script>
 
-	</body>
+	<script src="common/common.js" type="module"></script>
 	
 </html>
