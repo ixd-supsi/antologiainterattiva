@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<title>Slider</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+	
+
+
+
+	<style type="text/css">
+		body {
+
+			margin: 0;
+			padding: 0;
+			background-color: black;
+			
+				}
+		
+
+		/* Nettuno blu titolo*/
+
+		h1{
+			position: absolute; 
+			margin-left: 23%; 
+			margin-top:  20%;  
+			font-size: 7vw; 
+			font-weight: 400;
+			font-family: Helvetica neue, regular;
+			color: #2C39FF  ;
+			  white-space: nowrap; 
+
+  
+		}
+
+
+
+
+		/* Nettuno bianco titolo*/
+
+		h2{
+			position: absolute; 
+			margin-left: 23%;
+			margin-top:  20%;  
+			font-size: 7vw;
+			font-weight: 400; 
+			font-family: Helvetica neue, regular;
+			color: grey;
+		}
+
+		
+
+
+
+		/* Mercurio grigio titolo*/
+
+		h5{
+			position: absolute; 
+			margin-left: 20.5%; 
+			margin-top:  13.2%;  
+			font-size: 7vw; 
+			font-weight: 400;
+			font-family: Helvetica neue, regular;
+			color: grey;
+		}
+
+		/* Mercurio bianco titolo*/
+
+		h13{
+			position: absolute; 
+			margin-left: 20.5%; 
+			margin-top:  13.2%; 
+			font-size: 7vw; 
+			font-weight: 400;
+			font-family: Helvetica neue, regular;
+			color: grey;
+		}
+
+
+		/* Mercurio arancione titolo*/
+
+		h9{
+			position: absolute; 
+			margin-left: 20.5%; 
+			margin-top:  13.2%;  
+			font-size: 7vw;
+			font-weight: 400;
+			font-family: Helvetica neue;
+			color: #FC4E1F   ;
+		}
+
+
+
+
+
+
+		/* Venere grigio titolo*/
+
+		h7{
+			position: absolute; 
+			margin-left: 26.5%; 
+			margin-top:  7%;  
+			font-size: 7vw; 
+			font-weight: 400;
+			font-family: Helvetica neue, light;
+			color: grey;
+		}
+
+			/* Venere rosso titolo */
+
+		h11{
+			position: absolute; 
+			margin-left: 26.5%; 
+			margin-top:  7%;  
+			font-size: 7vw; 
+			font-weight: 400;
+			font-family: Helvetica neue, light;
+			color: #FD2424    ;
+		}
+
+
+
+		/* Nettuno blu testo*/
+
+		h3{
+			position: absolute; 
+			margin-left: 50%; 
+			margin-right:15%;
+			margin-top:  42.5%;  
+			font-size: 1vw; 
+			font-weight: 10;
+			font-family: Garamond;
+			line-height: 115%;
+			color: #2C39FF  ;
+
+		}
+
+
+		/* Nettuno bianco testo */
+
+			h4{
+			position: absolute; 
+			margin-left: 50%; 
+			margin-right:15%;
+			margin-top:  42.5%;
+			font-weight: 10;  
+			font-size: 1vw; 
+			line-height: 115%;
+			font-family: Garamond;
+			color: #363535;
+		}
+
+
+
+
+
+
+		/* Mercurio grigio testo*/
+
+		h6{
+
+			position: absolute;  
+			margin-left: 50%; 
+			margin-right:14%;
+			margin-top:  32.5%;
+			 font-weight: 10;   
+			font-size: 1vw; 
+			line-height: 115%; 
+			font-family: Garamond;
+			color: #363535;
+		}
+
+		/* Mercurio bianco testo*/
+
+		h14{
+			position: absolute; 
+			margin-left: 50%; 
+			margin-right:14%;
+			margin-top:  32.5%; 
+			font-size: 1vw;  
+			 font-weight: 10;
+			 line-height: 115%; 
+			font-family: Garamond;
+			color: #363535;
+		}
+
+
+		/* Mercurio arancione testo*/
+
+
+		h10{
+			position: absolute; 
+			margin-left: 50%; 
+			margin-right:14%;
+			margin-top:  32.5%;
+			 font-weight: 10;    
+			font-size: 1vw;  
+			font-family: Garamond;
+			line-height: 115%;
+			
+			color: #FC4E1F    ;
+		}
+
+
+
+
+
+
+
+		/* Venere grigio testo*/
+
+
+		h8{
+			position: absolute; 
+			margin-left: 50%; 
+			margin-right:15%;  
+			margin-top:  23%; 
+			 font-weight: 10; 
+			 line-height: 115%;
+			font-size: 1vw; 
+			font-family: Garamond;
+			color: #363535;
+		}
+		
+
+	
+		/* Venere rosso*/
+
+	
+		h12{
+			 position: absolute; 
+			 margin-left: 50%; 
+			 margin-right:15%;  
+			 margin-top:  23%;
+			 font-weight: 10; 
+			 line-height: 115%; 
+			 font-size: 1vw; 
+			 font-family: Garamond;
+			 color: #FD2424   ;
+		}
+
+
+
+		h16{
+			 position: absolute; 
+			 margin-left: 50%; 
+			 margin-top:  55%;
+			 font-weight: 10;  
+			 font-size: 0.8vw;
+			 font-family: Garamond;
+			 color: #363535 ;
+			 
+		}
+
+
+
+
+
+			/* slider barra */
+		.slider {
+		  -webkit-appearance: none;
+		 
+		  height: 600px;
+		 
+		 
+		  background: transparent;
+		 
+		 opacity: 0.7;
+		  -webkit-transition: .2s;
+		  transition: opacity .2s;
+		  position: absolute;
+
+		  -ms-transform: rotate(-90deg); /* IE 9 */
+ 		  transform: rotate(-90deg);
+
+
+  		 margin-left: 250px;
+ 		 margin-top: 0px;
+
+ 		 z-index: 1;
+
+		}
+
+		/* mouse sopra barra */
+		.slider::-webkit-slider-thumb {
+		  -webkit-appearance: none;
+		  appearance: none;
+		  width: 60px;
+		  height: 60px;
+		  background: transparent;
+		   
+		  cursor: pointer;
+
+		}
+
+		.slider::-moz-range-thumb {
+		  width: 0px;
+		  height: 10px;
+		  cursor: pointer;
+		}
+		/* lunghezza */
+		#myRange {
+			width: 35%;
+
+		}
+		
+		#label {
+			position: absolute; 
+		}
+	</style>
+
+<div class="slidecontainer">
+		<label id="label"></label>
+		<input type="range" min="0" max="4000" value="120" class="slider" id="myRange" >
+	</div>
+
+	<div id="text">
+
+
+		<h1>Nettuno</h1>
+		<h3>Fin dalla squalifica di Plutone come pianeta, Nettuno è considerato il pianeta più freddo con temperature medie di -200°C. È l'ottavo pianeta del sistema solare composto principalmente da idrogeno e gas di elio. Sperimenta variazioni di pressione e di temperatura a seconda dell'altitudine. A causa della sua distanza dal sole, le temperature su Nettuno sono influenzate più dalle radiazioni al suo interno che dal sole. La sua inclinazione ellittica di 23.4° riscalda il lato rivolto verso il sole con temperature di circa 10° sono sufficienti a consentire la fuoriuscita del metano. Al loro interno, i pianeti sperimentano anche variazioni di temperatura che si verificano durante il loro movimento intorno al sole o come influenza di fattori interni come venti e cambiamenti di pressione. I pianeti gassosi mancano di una temperatura superficiale definita rispetto ai pianeti terrestri.</h3>
+
+		<h5>Mercurio</h5>
+		<h6>Mercurio è il primo e il più piccolo pianeta del sistema solare. Anche se è più vicino al sole, è il secondo più caldo. A differenza di Venere, Mercurio è privo di atmosfera e quindi le temperature variano durante il giorno. Possono scendere a -93°C o salire a 427°C con una media di 167°C. Le temperature su Mercurio sono sotto l'influenza diretta del sole. Pertanto, il lato rivolto verso il sole è spesso bruciante mentre quello sul lato in ombra si sta congelando. Gli astronomi ritengono che le regioni polari di Mercurio non siano mai raggiunte dal sole e quindi potrebbero essere più fredde delle cime delle nuvole di Giove.</h6>
+
+		<h7>Venere</h7>
+		<h8>Venere è il secondo pianeta dal sole e il più caldo nel sistema solare. Le sue temperature possono raggiungere 464°C. Le alte temperature sono dovute a un'atmosfera densa con una copertura nuvolosa spessa. L'anidride carbonica costituisce la maggior parte dei gas atmosferici del pianeta e agisce come una coperta che impedisce al calore di fuoriuscire dal pianeta. Le temperature sono regolari durante tutto l'anno con variazioni leggere. In contrasto con altri pianeti, la sua piccola inclinazione ellittica di 3° non influenza le temperature, permettendo loro di rimanere stabili.</h8>
+
+		<h16>I pianeti più caldi e i più freddi del nostro sistema solare, ripleybelieves.com</h16>
+
+	</div><p></p>
+
+
+
+
+
+	
+	
+
+	<script type="text/javascript">
+
+		function slider() {
+			var slider = $("#myRange");
+
+			$("#myRange").change(function() {
+				slider_value = slider.val();
+				
+				label_box = $("#label");
+				text_box = $("#text");
+
+				
+
+				value = (slider_value * 100 / 4000) + "%";
+				label_box.css("left",value)
+				console.log(value)
+
+
+
+				if (slider_value <= 1400) {
+					
+					text_box.html(" <h1>Nettuno</h1><h3>Fin dalla squalifica di Plutone come pianeta, Nettuno è considerato il pianeta più freddo con temperature medie di -200°C. È l'ottavo pianeta del sistema solare composto principalmente da idrogeno e gas di elio. Sperimenta variazioni di pressione e di temperatura a seconda dell'altitudine. A causa della sua distanza dal sole, le temperature su Nettuno sono influenzate più dalle radiazioni al suo interno che dal sole. La sua inclinazione ellittica di 23.4° riscalda il lato rivolto verso il sole con temperature di circa 10° sono sufficienti a consentire la fuoriuscita del metano. Al loro interno, i pianeti sperimentano anche variazioni di temperatura che si verificano durante il loro movimento intorno al sole o come influenza di fattori interni come venti e cambiamenti di pressione. I pianeti gassosi mancano di una temperatura superficiale definita rispetto ai pianeti terrestri</h3><h5>Mercurio</h5><h6>Mercurio è il primo e il più piccolo pianeta del sistema solare. Anche se è più vicino al sole, è il secondo più caldo. A differenza di Venere, Mercurio è privo di atmosfera e quindi le temperature variano durante il giorno. Possono scendere a -93°C o salire a 427°C con una media di 167°C. Le temperature su Mercurio sono sotto l'influenza diretta del sole. Pertanto, il lato rivolto verso il sole è spesso bruciante mentre quello sul lato in ombra si sta congelando. Gli astronomi ritengono che le regioni polari di Mercurio non siano mai raggiunte dal sole e quindi potrebbero essere più fredde delle cime delle nuvole di Giove.</h6><h7>Venere</h7><h8>Venere è il secondo pianeta dal sole e il più caldo nel sistema solare. Le sue temperature possono raggiungere 464°C. Le alte temperature sono dovute a un'atmosfera densa con una copertura nuvolosa spessa. L'anidride carbonica costituisce la maggior parte dei gas atmosferici del pianeta e agisce come una coperta che impedisce al calore di fuoriuscire dal pianeta. Le temperature sono regolari durante tutto l'anno con variazioni leggere. In contrasto con altri pianeti, la sua piccola inclinazione ellittica di 3° non influenza le temperature, permettendo loro di rimanere stabili.</h8><h16>I pianeti più caldi e i più freddi del nostro sistema solare, ripleybelieves.com</h16>");
+
+					
+					
+					
+				}
+				else if (slider_value > 1400 && slider_value <= 2500) {
+					
+					text_box.html("<h2>Nettuno</h2><h4>Fin dalla squalifica di Plutone come pianeta, Nettuno è considerato il pianeta più freddo con temperature medie di -200°C. È l'ottavo pianeta del sistema solare composto principalmente da idrogeno e gas di elio. Sperimenta variazioni di pressione e di temperatura a seconda dell'altitudine. A causa della sua distanza dal sole, le temperature su Nettuno sono influenzate più dalle radiazioni al suo interno che dal sole. La sua inclinazione ellittica di 23.4° riscalda il lato rivolto verso il sole con temperature di circa 10° sono sufficienti a consentire la fuoriuscita del metano. Al loro interno, i pianeti sperimentano anche variazioni di temperatura che si verificano durante il loro movimento intorno al sole o come influenza di fattori interni come venti e cambiamenti di pressione. I pianeti gassosi mancano di una temperatura superficiale definita rispetto ai pianeti terrestri</h4><h7>Venere</h7><h8>Venere è il secondo pianeta dal sole e il più caldo nel sistema solare. Le sue temperature possono raggiungere 464°C. Le alte temperature sono dovute a un'atmosfera densa con una copertura nuvolosa spessa. L'anidride carbonica costituisce la maggior parte dei gas atmosferici del pianeta e agisce come una coperta che impedisce al calore di fuoriuscire dal pianeta. Le temperature sono regolari durante tutto l'anno con variazioni leggere. In contrasto con altri pianeti, la sua piccola inclinazione ellittica di 3° non influenza le temperature, permettendo loro di rimanere stabili.</h8><h9>Mercurio</h9><h10>Mercurio è il primo e il più piccolo pianeta del sistema solare. Anche se è più vicino al sole, è il secondo più caldo. A differenza di Venere, Mercurio è privo di atmosfera e quindi le temperature variano durante il giorno. Possono scendere a -93°C o salire a 427°C con una media di 167°C. Le temperature su Mercurio sono sotto l'influenza diretta del sole. Pertanto, il lato rivolto verso il sole è spesso bruciante mentre quello sul lato in ombra si sta congelando. Gli astronomi ritengono che le regioni polari di Mercurio non siano mai raggiunte dal sole e quindi potrebbero essere più fredde delle cime delle nuvole di Giove.</h10><h16>I pianeti più caldi e i più freddi del nostro sistema solare, ripleybelieves.com</h16>");
+					
+					
+				}
+				else {
+					
+					text_box.html("<h2>Nettuno</h2><h4>Fin dalla squalifica di Plutone come pianeta, Nettuno è considerato il pianeta più freddo con temperature medie di -200°C. È l'ottavo pianeta del sistema solare composto principalmente da idrogeno e gas di elio. Sperimenta variazioni di pressione e di temperatura a seconda dell'altitudine. A causa della sua distanza dal sole, le temperature su Nettuno sono influenzate più dalle radiazioni al suo interno che dal sole. La sua inclinazione ellittica di 23.4° riscalda il lato rivolto verso il sole con temperature di circa 10° sono sufficienti a consentire la fuoriuscita del metano. Al loro interno, i pianeti sperimentano anche variazioni di temperatura che si verificano durante il loro movimento intorno al sole o come influenza di fattori interni come venti e cambiamenti di pressione. I pianeti gassosi mancano di una temperatura superficiale definita rispetto ai pianeti terrestri</h4><h13>Mercurio</h13><h14>Mercurio è il primo e il più piccolo pianeta del sistema solare. Anche se è più vicino al sole, è il secondo più caldo. A differenza di Venere, Mercurio è privo di atmosfera e quindi le temperature variano durante il giorno. Possono scendere a -93°C o salire a 427°C con una media di 167°C. Le temperature su Mercurio sono sotto l'influenza diretta del sole. Pertanto, il lato rivolto verso il sole è spesso bruciante mentre quello sul lato in ombra si sta congelando. Gli astronomi ritengono che le regioni polari di Mercurio non siano mai raggiunte dal sole e quindi potrebbero essere più fredde delle cime delle nuvole di Giove.</h14><h11>Venere</h11><h12>Venere è il secondo pianeta dal sole e il più caldo nel sistema solare. Le sue temperature possono raggiungere 464°C. Le alte temperature sono dovute a un'atmosfera densa con una copertura nuvolosa spessa. L'anidride carbonica costituisce la maggior parte dei gas atmosferici del pianeta e agisce come una coperta che impedisce al calore di fuoriuscire dal pianeta. Le temperature sono regolari durante tutto l'anno con variazioni leggere. In contrasto con altri pianeti, la sua piccola inclinazione ellittica di 3° non influenza le temperature, permettendo loro di rimanere stabili.</h12><h16>I pianeti più caldi e i più freddi del nostro sistema solare,ripleybelieves.com</h16>");
+					
+					
+				}
+			});
+		}
+
+		$(document).ready(function() {
+			slider();
+		});
+
+	</script>
+
+
+<script src="../common/common.js" type="module"></script>
+
+
+</body>
+</html>
