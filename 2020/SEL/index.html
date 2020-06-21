@@ -15,24 +15,20 @@
 
 </head>
 
-
 <body bgcolor="#1d1d1b"  text="#ffffff">
     
     <div class="main-content">
-    
-        	<p>È così bello fissare il cielo e accorgersi <br> di come non sia altro che un vero <br> e proprio immenso laboratorio di fisica <br> che si srotola sulle nostre teste. <br>- Margherita Hack</p>
-    
-    
+    	<p>È così bello fissare il cielo e accorgersi <br> di come non sia altro che un vero <br> e proprio immenso laboratorio di fisica <br> che si srotola sulle nostre teste. <br>- Margherita Hack</p>
     </div>
     
-    <div id="illustrazione">
-    	<img id="margherita" src="foto/margherita.png" alt="Margherita Hack" width="60" height="223" /> 
-	    <div id="costellazione">
-	        <object data="costellazione2.svg" id="costellazione" width="1094" height="488"></object>
-	    </div>
-	</div>
+    <div class="costellazione">
+        <object data="costellazione2.svg" id="costellazione" width="1094" height="488"></object>
+    </div>
+    
+    <img src="foto/margherita.png">
             
   
+
 <script type="text/javascript">
 	window.addEventListener("load", function(){
 			const svg = $("#costellazione")[0].contentDocument.documentElement; console.log (svg)
@@ -61,13 +57,8 @@
 
 </script>
 
-    
-    
-    
-    <script src="../common/common.js" type="module">
+	<script src="../common/common.js" type="module">
     </script>
     
-    
-    
-    </body>
+</body>
 </html>
