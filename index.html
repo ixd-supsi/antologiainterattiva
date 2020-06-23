@@ -36,8 +36,12 @@
                 padding: 0;
                 list-style: none;
             }
+            .author {
+                width: 200px;
+                display: inline-block;
+            }
             h4{
-                margin:0;
+                margin: 0 0 1em;
             }
             p{
                 margin:0;
@@ -57,28 +61,60 @@
                 opacity: 0.2;
                 margin:1em 0 1em 0;
             }
+            @media only screen and (max-width: 600px) {
+                .author {
+                    display: block;
+                }
+                li {
+                    margin-bottom: 1em;
+                }
+            }
         </style>
     </head>
     <body>
         <h4>Antologia Interattiva</h4>
         <p>
             SUPSI<br>
+            Corso di interaction design<br>
+            Docenti: Andreas Gysin, Giovanni Profeta<br>
             Primavera 2020<br>
             <a class="link" href="https://github.com/ixd-supsi/antologiainterattiva">codice</a>
         </p>
         <hr>
         <ul>
-            <li><a href="2020/CAS/">Sara Camponovo, Filastrocca dei pianeti</a></li>
-            <li><a href="2020/CAF/">Fabienne Carrara, Lucciole</a></li>
-            <li><a href="2020/DRA/">Andrea Dragoni, Il suono dello spazio</a></li>
-            <li><a href="2020/GRL/index.html">Luca Grisoni, Zero Gravity</a></li>
-            <li><a href="2020/KAA/index.html">Anastasia Kapitanova, Fasi Lunari</a></li>
-            <li><a href="2020/NII/">Ismaela Nicola, Alla luna</a></li>
-            <li><a href="2020/PAE/">Elena Paglione, Il Pianeta Yuggoth</a></li>
-            <li><a href="2020/PEK/">Katia Pedrioli, Da pianeta freddo a pianeta caldo</a></li>
-            <li><a href="2020/SEL/">Luca Seguenza, Fissare il cielo</a></li>
-            <li><a href="2020/TEL/index.html">Luca Tesi, Asteroids *</a></li>
-            <li><a href="2020/TOG/">Giorgia Tomasi, Aurora polare</a></li>
+            <li><a href="2020/CAS/">
+                <span class="author">Sara Camponovo</span><span>Filastrocca dei pianeti</span>
+            </a></li>
+            <li><a href="2020/CAF/">
+                <span class="author">Fabienne Carrara</span></span>Lucciole</span>
+            </a></li>
+            <li><a href="2020/DRA/">
+                <span class="author">Andrea Dragoni</span><span>Il suono dello spazio</span>
+            </a></li>
+            <li><a href="2020/GRL/index.html">
+                <span class="author">Luca Grisoni</span><span>Zero Gravity</span>
+            </a></li>
+            <li><a href="2020/KAA/index.html">
+                <span class="author">Anastasia Kapitanova</span><span>Fasi Lunari</span>
+            </a></li>
+            <li><a href="2020/NII/">
+                <span class="author">Ismaela Nicola</span><span>Alla luna</span>
+            </a></li>
+            <li><a href="2020/PAE/">
+                <span class="author">Elena Paglione</span><span>Il Pianeta Yuggoth</span>
+            </a></li>
+            <li><a href="2020/PEK/">
+                <span class="author">Katia Pedrioli</span><span>Da pianeta freddo a pianeta caldo</span>
+            </a></li>
+            <li><a href="2020/SEL/">
+                <span class="author">Luca Seguenza</span><span>Fissare il cielo</span>
+            </a></li>
+            <li><a href="2020/TEL/index.html">
+                <span class="author">Luca Tesi</span><span>Asteroids</span>
+            </a></li>
+            <li><a href="2020/TOG/">
+                <span class="author">Giorgia Tomasi</span><span>Aurora polare</span>
+            </a></li>
         </ul>
         <hr>
         <footer>
