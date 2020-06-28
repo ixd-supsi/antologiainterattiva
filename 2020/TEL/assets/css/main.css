@@ -1,0 +1,518 @@
+        body{
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-image: "gameCanvas"; 
+
+        }
+
+/*        @font-face{
+        font-family: "RobotoMono-Regular.ttf";
+        src:;
+        }
+
+
+        * {
+        font-family: "RobotoMono-Regular.ttf";
+        }*/
+
+
+
+        #gameCanvas {
+            
+            background: black;
+            top: 64px;
+            position: fixed;
+  
+        }
+
+        .big_dad{
+          overflow-x: hidden;
+        }
+
+
+        .gridcontainer{
+            position: fixed;
+            display: flex;
+            color: white;
+            background-color: black;
+            width: 99.9vw;
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+            margin-right:10px; 
+
+
+        }
+
+        .grid_2{
+            align-items: center;
+            padding: 17px;
+            padding-top: 22px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-right: 1px solid white;
+        }
+
+
+
+        .contenitore{
+            position: relative;
+            color: white;
+            background-color: rgba(38, 38, 38, 0.4);
+            padding: 50px;
+            width: 740px;
+            top: 350px;
+            margin: 200px;
+            margin-left: 350px;
+            line-height: 1.5;
+            font-size: 25px;
+           
+
+        }
+
+        
+
+        .contenitore_2{
+            position: relative;
+            color: white;
+            background-color: rgba(38, 38, 38, 0.4);
+            padding: 50px;
+            width: 740px;
+            margin: 200px;
+           /* left: 150px;*/
+            line-height: 1.5;
+            font-size: 25px;
+            top: 500px;
+            margin-left: 350px;
+            /*font-family: "Futura";*/
+        }
+
+        .contenitore_3{
+            position: relative;
+            color: white;
+            background-color: rgba(38, 38, 38, 0.4);
+            padding: 50px;
+            width: 740px;
+            margin: 200px;
+          /*  left: 150px;*/
+            line-height: 1.5;
+            font-size: 25px;
+            top: 700px;
+            margin-left: 350px;
+            /*font-family: "Futura";*/
+        }
+
+        .contenitore_4{
+            position: relative;
+            color: white;
+            background-color: rgba(38, 38, 38, 0.4);
+            padding: 50px;
+            width: 740px;
+            margin: 200px;
+         /*   left: 150px;*/
+            line-height: 1.5;
+            font-size: 25px;
+            top: 900px;
+            margin-left: 350px;
+            
+            /*font-family: "Futura";*/
+        }
+
+        .contenitore_5{
+            position: relative;
+            color: white;
+            background-color: rgba(38, 38, 38, 0.4);
+            padding: 50px;
+            width: 740px;
+            margin: 200px;
+         /*   left: 150px;*/
+            line-height: 1.5;
+            font-size: 25px;
+            top: 1100px;
+            margin-left: 350px;
+
+            
+            /*font-family: "Futura";*/
+        }
+
+        .contenitore_6{
+            position: relative;
+            color: white;
+            background-color: rgba(38, 38, 38, 0.4);
+            padding: 50px;
+            width: 740px;
+            margin: 200px;
+         /*   left: 150px;*/
+            line-height: 1.5;
+            font-size: 25px;
+            top: 1300px;
+            margin-left: 350px;
+            
+            
+            /*font-family: "Futura";*/
+        }
+
+        #tex{
+            position: relative;
+            color: white;
+
+        }
+
+        a.title {
+            font-size: 50px;
+            font-weight: bold;
+            /*font-family: "futura";*/
+        }
+
+        #spangest{
+          top: 300px;
+          position: relative;
+        }
+
+        div.uno {
+
+          position: relative;
+          box-shadow: -7px 0 0 7px #fff, 7px 0 0 7px #fff; /* Tune line "padding" here */
+          background-color: #fff;
+          line-height: 1.0; /* Tune line "margin" here */
+          font-weight: bold;
+          font-size: 73px;
+          width: 1300px;
+          margin-left: 150px;
+
+        }
+
+        div.due {
+
+          position: relative;
+          box-shadow: -7px 0 0 7px #fff, 7px 0 0 7px #fff; /* Tune line "padding" here */
+          background-color: #fff;
+          line-height: 0.8; /* Tune line "margin" here */
+          font-size: 35px;
+          /*font-family: "futura";*/
+          margin-top: 20px;
+          margin-left: 150px;
+          width: 1065px;
+        }
+
+        div.tre {
+
+          position: relative;
+          box-shadow: -7px 0 0 7px #fff, 7px 0 0 7px #fff; /* Tune line "padding" here */
+          background-color: #fff;
+          line-height: 0.8; /* Tune line "margin" here */
+          font-size: 35px;
+          /*font-family: "futura";*/
+          margin-top: 20px;
+          margin-left: 150px;
+          width: 925px;
+        }
+
+        div.quattro {
+
+          position: relative;
+          box-shadow: -7px 0 0 7px #fff, 7px 0 0 7px #fff; /* Tune line "padding" here */
+          background-color: #fff;
+          line-height: 0.8; /* Tune line "margin" here */
+          font-size: 35px;
+          /*font-family: "futura";*/
+          margin-top: 20px;
+          margin-left: 150px;
+          width: 850px;
+        }
+
+        .footer{
+          top: 1300px;
+          position: relative;
+          background-color: rgba(38, 38, 38, 0.4);
+          height: 300px;
+
+        }
+
+        h1{
+          position: relative;
+          color: white;
+          font-size: 30pt;
+          padding-left: 150px;
+          top: 70px;
+        }
+
+        h4{
+          position: relative;
+          color: white;
+          font-size: 15pt;
+          font-weight: normal;
+          padding-left: 150px;
+          top: 90px;          
+        }
+
+        h4.h_2{
+         position: relative;
+          color: white;
+          font-size: 15pt;
+          font-weight: lighter;
+          padding-left: 450px;
+          top: 40px; 
+        }
+         h4.h_3{
+          position: relative;
+          color: white;
+          font-size: 15pt;
+          font-weight: normal;
+          padding-left: 520px;
+          top: -10px; 
+        }
+
+        #info{
+          position: absolute;
+          color: white;
+          padding-left: 1250px;
+          top: 100px;
+          text-align: right;
+
+        }
+
+        .small{
+          font-size: 8pt;
+          padding-top:28px;
+         }
+
+         .grid_2_dot{
+          align-items: center;
+          padding: 17px;
+          padding-top: 22px;
+          padding-left: 30px;
+          padding-right: 30px;
+          border-right: 1px solid white;
+          
+          font-size: 20pt;
+          font-weight: bold;
+          padding-top:10px;
+
+         }
+
+          a{
+            text-decoration: none;
+            color: white;
+          }
+
+          @media only screen 
+and (max-width: 1200px){
+    .gridcontainer{
+            position: fixed;
+            display: flex;
+            color: white;
+            background-color: black;
+            width: 99.9vw;
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+             
+
+
+        }
+
+        .grid_2{
+            align-items: center;
+            padding: 10px;
+            padding-top: 22px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-right: 1px solid white;
+            padding-bottom: 17px;
+        }
+
+        .small{
+          font-size: 8pt;
+          padding-top:28px;
+         }
+
+         div.uno {
+
+          position: relative;
+          box-shadow: -7px 0 0 7px #fff, 7px 0 0 7px #fff; /* Tune line "padding" here */
+          background-color: #fff;
+          line-height: 1.0; /* Tune line "margin" here */
+          font-weight: bold;
+          font-size: 43px;
+          width: 775px;
+          margin-left: 100px;
+
+        }
+
+        div.due {
+
+          position: relative;
+          box-shadow: -7px 0 0 7px #fff, 7px 0 0 7px #fff; /* Tune line "padding" here */
+          background-color: #fff;
+          line-height: 0.8; /* Tune line "margin" here */
+          font-size: 25px;
+          /*font-family: "futura";*/
+          margin-top: 20px;
+          margin-left: 100px;
+          width: 765px;
+        }
+
+        div.tre {
+
+          position: relative;
+          box-shadow: -7px 0 0 7px #fff, 7px 0 0 7px #fff; /* Tune line "padding" here */
+          background-color: #fff;
+          line-height: 0.8; /* Tune line "margin" here */
+          font-size: 25px;
+          /*font-family: "futura";*/
+          margin-top: 20px;
+          margin-left: 100px;
+          width: 675px;
+        }
+
+        div.quattro {
+
+          position: relative;
+          box-shadow: -7px 0 0 7px #fff, 7px 0 0 7px #fff; /* Tune line "padding" here */
+          background-color: #fff;
+          line-height: 0.8; /* Tune line "margin" here */
+          font-size: 25px;
+          /*font-family: "futura";*/
+          margin-top: 20px;
+          margin-left: 100px;
+          width: 600px;
+        }
+
+        .contenitore{
+            position: relative;
+            color: white;
+            background-color: rgba(38, 38, 38, 0.4);
+            padding: 50px;
+            width: 740px;
+            top: 350px;
+            margin: 200px;
+            margin-left: 100px;
+            line-height: 1.5;
+            font-size: 25px;
+           
+
+        }
+
+        
+
+        .contenitore_2{
+            position: relative;
+            color: white;
+            background-color: rgba(38, 38, 38, 0.4);
+            padding: 50px;
+            width: 740px;
+            margin: 200px;
+           /* left: 150px;*/
+            line-height: 1.5;
+            font-size: 25px;
+            top: 500px;
+            margin-left: 100px;
+            /*font-family: "Futura";*/
+        }
+
+        .contenitore_3{
+            position: relative;
+            color: white;
+            background-color: rgba(38, 38, 38, 0.4);
+            padding: 50px;
+            width: 740px;
+            margin: 200px;
+          /*  left: 150px;*/
+            line-height: 1.5;
+            font-size: 25px;
+            top: 700px;
+            margin-left: 100px;
+            /*font-family: "Futura";*/
+        }
+
+        .contenitore_4{
+            position: relative;
+            color: white;
+            background-color: rgba(38, 38, 38, 0.4);
+            padding: 50px;
+            width: 740px;
+            margin: 200px;
+         /*   left: 150px;*/
+            line-height: 1.5;
+            font-size: 25px;
+            top: 900px;
+            margin-left: 100px;
+            
+            /*font-family: "Futura";*/
+        }
+
+        .contenitore_5{
+            position: relative;
+            color: white;
+            background-color: rgba(38, 38, 38, 0.4);
+            padding: 50px;
+            width: 740px;
+            margin: 200px;
+         /*   left: 150px;*/
+            line-height: 1.5;
+            font-size: 25px;
+            top: 1100px;
+            margin-left: 100px;
+
+            
+            /*font-family: "Futura";*/
+        }
+
+        .contenitore_6{
+            position: relative;
+            color: white;
+            background-color: rgba(38, 38, 38, 0.4);
+            padding: 50px;
+            width: 740px;
+            margin: 200px;
+         /*   left: 150px;*/
+            line-height: 1.5;
+            font-size: 25px;
+            top: 1300px;
+            margin-left: 100px;
+            
+            
+            /*font-family: "Futura";*/
+        }
+       #info{
+          position: absolute;
+          color: white;
+          padding-left: 650px;
+          top: 100px;
+          text-align: right;
+
+        }
+
+        h1{
+          position: relative;
+          color: white;
+          font-size: 30pt;
+          padding-left: 50px;
+          top: 70px;
+        }
+
+        h4{
+          position: relative;
+          color: white;
+          font-size: 15pt;
+          font-weight: normal;
+          padding-left: 50px;
+          top: 90px;          
+        }
+
+        h4.h_2{
+         position: relative;
+          color: white;
+          font-size: 15pt;
+          font-weight: lighter;
+          padding-left: 350px;
+          top: 40px; 
+        }
+         h4.h_3{
+          position: relative;
+          color: white;
+          font-size: 15pt;
+          font-weight: normal;
+          padding-left: 420px;
+          top: -10px; 
+        }
+}
